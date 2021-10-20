@@ -1,0 +1,504 @@
+16:47:12.019 [main] INFO  c.belle.openapi.OpenapiApplication - Starting OpenapiApplication on xiexiongdeMacBook-Pro.local with PID 14932 (/Users/xiexiong/project/openapi/target/classes started by xiexiong in /Users/xiexiong/project/openapi) 
+16:47:12.022 [main] INFO  c.belle.openapi.OpenapiApplication - The following profiles are active: dev 
+16:47:13.146 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) 
+16:47:13.169 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+16:47:13.169 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19] 
+16:47:13.300 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+16:47:13.300 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1241 ms 
+16:47:13.360 [main] INFO  o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?) 
+16:47:13.362 [main] INFO  o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?) 
+16:47:13.650 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated 
+16:47:13.793 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+16:47:14.053 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' 
+16:47:14.057 [main] INFO  c.belle.openapi.OpenapiApplication - Started OpenapiApplication in 2.46 seconds (JVM running for 3.415) 
+16:47:49.685 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+16:47:49.685 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+16:47:49.692 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms 
+16:47:49.758 [http-nio-8080-exec-1] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+16:54:26.199 [Thread-6] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+16:54:26.203 [Thread-6] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} closed 
+16:54:30.325 [main] INFO  c.belle.openapi.OpenapiApplication - Starting OpenapiApplication on xiexiongdeMacBook-Pro.local with PID 14980 (/Users/xiexiong/project/openapi/target/classes started by xiexiong in /Users/xiexiong/project/openapi) 
+16:54:30.327 [main] INFO  c.belle.openapi.OpenapiApplication - The following profiles are active: dev 
+16:54:31.339 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) 
+16:54:31.359 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+16:54:31.359 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19] 
+16:54:31.453 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+16:54:31.453 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1088 ms 
+16:54:31.496 [main] INFO  o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?) 
+16:54:31.497 [main] INFO  o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?) 
+16:54:31.765 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated 
+16:54:31.901 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+16:54:32.157 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' 
+16:54:32.161 [main] INFO  c.belle.openapi.OpenapiApplication - Started OpenapiApplication in 2.181 seconds (JVM running for 3.118) 
+16:54:36.724 [http-nio-8080-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+16:54:36.725 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+16:54:36.733 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms 
+16:54:36.785 [http-nio-8080-exec-4] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+16:54:36.881 [http-nio-8080-exec-4] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user  
+16:54:36.899 [http-nio-8080-exec-4] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - ==> Parameters:  
+16:54:36.921 [http-nio-8080-exec-4] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - <==      Total: 2 
+16:59:36.239 [Thread-7] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+16:59:36.246 [Thread-7] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} closed 
+16:59:40.105 [main] INFO  c.belle.openapi.OpenapiApplication - Starting OpenapiApplication on xiexiongdeMacBook-Pro.local with PID 15021 (/Users/xiexiong/project/openapi/target/classes started by xiexiong in /Users/xiexiong/project/openapi) 
+16:59:40.108 [main] INFO  c.belle.openapi.OpenapiApplication - The following profiles are active: dev 
+16:59:40.994 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) 
+16:59:41.015 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+16:59:41.015 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19] 
+16:59:41.121 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+16:59:41.121 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 976 ms 
+16:59:41.162 [main] INFO  o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?) 
+16:59:41.163 [main] INFO  o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?) 
+16:59:41.430 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated 
+16:59:41.572 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+16:59:41.827 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' 
+16:59:41.830 [main] INFO  c.belle.openapi.OpenapiApplication - Started OpenapiApplication in 2.028 seconds (JVM running for 3.156) 
+16:59:46.187 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+16:59:46.187 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+16:59:46.193 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms 
+16:59:46.248 [http-nio-8080-exec-2] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+16:59:46.339 [http-nio-8080-exec-2] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user  
+16:59:46.362 [http-nio-8080-exec-2] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - ==> Parameters:  
+16:59:46.385 [http-nio-8080-exec-2] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - <==      Total: 2 
+17:05:41.160 [Thread-8] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+17:05:41.166 [Thread-8] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} closed 
+17:05:44.944 [main] INFO  c.belle.openapi.OpenapiApplication - Starting OpenapiApplication on xiexiongdeMacBook-Pro.local with PID 15068 (/Users/xiexiong/project/openapi/target/classes started by xiexiong in /Users/xiexiong/project/openapi) 
+17:05:44.956 [main] INFO  c.belle.openapi.OpenapiApplication - The following profiles are active: dev 
+17:05:45.973 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) 
+17:05:45.992 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+17:05:45.992 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19] 
+17:05:46.097 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+17:05:46.097 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1109 ms 
+17:05:46.140 [main] INFO  o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?) 
+17:05:46.141 [main] INFO  o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?) 
+17:05:46.432 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated 
+17:05:46.579 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+17:05:46.879 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' 
+17:05:46.882 [main] INFO  c.belle.openapi.OpenapiApplication - Started OpenapiApplication in 2.313 seconds (JVM running for 3.225) 
+17:05:51.330 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+17:05:51.330 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+17:05:51.335 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms 
+17:05:51.391 [http-nio-8080-exec-2] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+17:05:51.484 [http-nio-8080-exec-2] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user  
+17:05:51.501 [http-nio-8080-exec-2] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - ==> Parameters:  
+17:05:51.520 [http-nio-8080-exec-2] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - <==      Total: 2 
+17:07:10.875 [Thread-8] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+17:07:10.880 [Thread-8] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} closed 
+17:07:14.101 [main] INFO  c.belle.openapi.OpenapiApplication - Starting OpenapiApplication on xiexiongdeMacBook-Pro.local with PID 15084 (/Users/xiexiong/project/openapi/target/classes started by xiexiong in /Users/xiexiong/project/openapi) 
+17:07:14.103 [main] INFO  c.belle.openapi.OpenapiApplication - The following profiles are active: dev 
+17:07:15.138 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) 
+17:07:15.155 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+17:07:15.155 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19] 
+17:07:15.248 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+17:07:15.249 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1099 ms 
+17:07:15.290 [main] INFO  o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?) 
+17:07:15.291 [main] INFO  o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?) 
+17:07:15.597 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated 
+17:07:15.618 [main] ERROR c.a.druid.filter.FilterManager - load filter error, filter not found : logback 
+17:07:15.751 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+17:07:16.023 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' 
+17:07:16.026 [main] INFO  c.belle.openapi.OpenapiApplication - Started OpenapiApplication in 2.245 seconds (JVM running for 2.823) 
+17:07:42.824 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+17:07:42.824 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+17:07:42.832 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms 
+17:07:42.889 [http-nio-8080-exec-2] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+17:07:42.986 [http-nio-8080-exec-2] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user  
+17:07:43.078 [http-nio-8080-exec-2] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - ==> Parameters:  
+17:07:43.104 [http-nio-8080-exec-2] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - <==      Total: 2 
+17:32:03.171 [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+17:32:03.234 [Thread-3] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} closed 
+17:33:37.686 [main] INFO  c.belle.openapi.OpenapiApplication - Starting OpenapiApplication on xiexiongdeMacBook-Pro.local with PID 15298 (/Users/xiexiong/project/openapi/target/classes started by xiexiong in /Users/xiexiong/project/openapi) 
+17:33:37.689 [main] INFO  c.belle.openapi.OpenapiApplication - The following profiles are active: dev 
+17:33:38.655 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) 
+17:33:38.672 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+17:33:38.673 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19] 
+17:33:38.766 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+17:33:38.766 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1038 ms 
+17:33:38.807 [main] INFO  o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?) 
+17:33:38.808 [main] INFO  o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?) 
+17:33:39.081 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated 
+17:33:39.100 [main] ERROR c.a.druid.filter.FilterManager - load filter error, filter not found : logback 
+17:33:39.247 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+17:33:39.516 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' 
+17:33:39.519 [main] INFO  c.belle.openapi.OpenapiApplication - Started OpenapiApplication in 2.2 seconds (JVM running for 3.333) 
+17:34:24.212 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+17:34:24.212 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+17:34:24.218 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms 
+17:34:24.224 [http-nio-8080-exec-1] ERROR c.b.openapi.conf.filter.SignFilter - 缺少方法签名 
+17:34:54.893 [http-nio-8080-exec-3] ERROR c.b.o.c.interceptor.SignInterceptor - 签名校验失败 
+17:34:54.901 [http-nio-8080-exec-3] ERROR c.b.o.c.WebExceptionHandler - 签名错误 
+com.belle.openapi.common.exception.SignErrorException: 方法签名异常
+	at com.belle.openapi.conf.interceptor.SignInterceptor.preHandle(SignInterceptor.java:28)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.belle.openapi.conf.filter.SignFilter.doFilter(SignFilter.java:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+17:35:07.588 [http-nio-8080-exec-4] ERROR c.b.o.c.WebExceptionHandler - 发生了未知异常 
+org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'userName' is not present
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:202)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:113)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:126)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.belle.openapi.conf.filter.SignFilter.doFilter(SignFilter.java:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+17:35:40.221 [http-nio-8080-exec-5] ERROR c.b.o.c.WebExceptionHandler - 发生了未知异常 
+org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'userName' is not present
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:202)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:113)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:126)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.belle.openapi.conf.filter.SignFilter.doFilter(SignFilter.java:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+17:35:42.684 [Thread-8] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+17:35:48.964 [main] INFO  c.belle.openapi.OpenapiApplication - Starting OpenapiApplication on xiexiongdeMacBook-Pro.local with PID 15317 (/Users/xiexiong/project/openapi/target/classes started by xiexiong in /Users/xiexiong/project/openapi) 
+17:35:48.966 [main] INFO  c.belle.openapi.OpenapiApplication - The following profiles are active: dev 
+17:35:49.991 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) 
+17:35:50.010 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+17:35:50.010 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19] 
+17:35:50.119 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+17:35:50.119 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1121 ms 
+17:35:56.434 [main] INFO  o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?) 
+17:35:56.436 [main] INFO  o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?) 
+17:35:56.745 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated 
+17:35:56.765 [main] ERROR c.a.druid.filter.FilterManager - load filter error, filter not found : logback 
+17:35:56.925 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+17:35:57.234 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' 
+17:35:57.238 [main] INFO  c.belle.openapi.OpenapiApplication - Started OpenapiApplication in 8.645 seconds (JVM running for 9.556) 
+17:36:02.494 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+17:36:02.494 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+17:36:02.502 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms 
+17:36:37.074 [http-nio-8080-exec-1] ERROR c.b.o.c.WebExceptionHandler - 发生了未知异常 
+org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'userName' is not present
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:202)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:113)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:126)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.belle.openapi.conf.filter.SignFilter.doFilter(SignFilter.java:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+17:37:16.619 [http-nio-8080-exec-3] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+17:37:16.759 [http-nio-8080-exec-3] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user  
+17:37:16.839 [http-nio-8080-exec-3] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - ==> Parameters:  
+17:37:16.867 [http-nio-8080-exec-3] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - <==      Total: 2 
+17:38:08.363 [http-nio-8080-exec-4] ERROR c.b.openapi.conf.filter.SignFilter - 缺少方法签名 
+17:38:08.365 [http-nio-8080-exec-5] ERROR c.b.openapi.conf.filter.SignFilter - 缺少方法签名 
+17:38:08.365 [http-nio-8080-exec-7] ERROR c.b.openapi.conf.filter.SignFilter - 缺少方法签名 
+17:38:08.365 [http-nio-8080-exec-6] ERROR c.b.openapi.conf.filter.SignFilter - 缺少方法签名 
+17:38:08.365 [http-nio-8080-exec-8] ERROR c.b.openapi.conf.filter.SignFilter - 缺少方法签名 
+17:38:08.365 [http-nio-8080-exec-9] ERROR c.b.openapi.conf.filter.SignFilter - 缺少方法签名 
+17:39:20.074 [http-nio-8080-exec-1] ERROR c.b.openapi.conf.filter.SignFilter - 缺少方法签名 
+17:41:08.563 [Thread-7] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+17:41:08.584 [Thread-7] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} closed 
+17:41:14.635 [main] INFO  c.belle.openapi.OpenapiApplication - Starting OpenapiApplication on xiexiongdeMacBook-Pro.local with PID 15384 (/Users/xiexiong/project/openapi/target/classes started by xiexiong in /Users/xiexiong/project/openapi) 
+17:41:14.638 [main] INFO  c.belle.openapi.OpenapiApplication - The following profiles are active: dev 
+17:41:15.699 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) 
+17:41:15.721 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+17:41:15.722 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19] 
+17:41:15.839 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+17:41:15.840 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1171 ms 
+17:41:15.892 [main] INFO  o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?) 
+17:41:15.893 [main] INFO  o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?) 
+17:41:16.203 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated 
+17:41:16.222 [main] ERROR c.a.druid.filter.FilterManager - load filter error, filter not found : logback 
+17:41:16.375 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+17:41:16.653 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' 
+17:41:16.657 [main] INFO  c.belle.openapi.OpenapiApplication - Started OpenapiApplication in 2.416 seconds (JVM running for 3.317) 
+17:41:20.821 [http-nio-8080-exec-1] ERROR c.b.openapi.conf.filter.SignFilter - 缺少方法签名 
+17:57:01.486 [Thread-7] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+17:57:53.061 [main] INFO  c.belle.openapi.OpenapiApplication - Starting OpenapiApplication on xiexiongdeMacBook-Pro.local with PID 15599 (/Users/xiexiong/project/openapi/target/classes started by xiexiong in /Users/xiexiong/project/openapi) 
+17:57:53.064 [main] INFO  c.belle.openapi.OpenapiApplication - The following profiles are active: dev 
+17:57:54.256 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) 
+17:57:54.276 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+17:57:54.276 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19] 
+17:57:54.388 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+17:57:54.388 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1280 ms 
+17:57:54.433 [main] INFO  o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?) 
+17:57:54.434 [main] INFO  o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?) 
+17:57:54.755 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated 
+17:57:54.772 [main] ERROR c.a.druid.filter.FilterManager - load filter error, filter not found : logback 
+17:57:54.921 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+17:57:55.192 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' 
+17:57:55.195 [main] INFO  c.belle.openapi.OpenapiApplication - Started OpenapiApplication in 2.549 seconds (JVM running for 3.294) 
+17:57:59.057 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+17:57:59.057 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+17:57:59.064 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms 
+17:57:59.142 [http-nio-8080-exec-2] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+17:57:59.261 [http-nio-8080-exec-2] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user  
+17:57:59.358 [http-nio-8080-exec-2] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - ==> Parameters:  
+17:57:59.394 [http-nio-8080-exec-2] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - <==      Total: 2 
+17:58:10.224 [http-nio-8080-exec-3] ERROR c.b.openapi.conf.filter.SignFilter - 缺少方法签名 
+18:01:40.934 [http-nio-8080-exec-4] ERROR c.b.openapi.conf.filter.SignFilter - 缺少方法签名 
+18:01:41.038 [Thread-7] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+18:01:41.053 [Thread-7] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} closed 
+18:02:48.616 [main] INFO  c.belle.openapi.OpenapiApplication - Starting OpenapiApplication on xiexiongdeMacBook-Pro.local with PID 15646 (/Users/xiexiong/project/openapi/target/classes started by xiexiong in /Users/xiexiong/project/openapi) 
+18:02:48.619 [main] INFO  c.belle.openapi.OpenapiApplication - The following profiles are active: dev 
+18:02:49.803 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) 
+18:02:49.823 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+18:02:49.823 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19] 
+18:02:49.936 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+18:02:49.936 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1271 ms 
+18:02:49.996 [main] INFO  o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?) 
+18:02:49.997 [main] INFO  o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?) 
+18:02:50.320 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated 
+18:02:50.344 [main] ERROR c.a.druid.filter.FilterManager - load filter error, filter not found : logback 
+18:02:50.541 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+18:02:50.896 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' 
+18:02:50.901 [main] INFO  c.belle.openapi.OpenapiApplication - Started OpenapiApplication in 2.695 seconds (JVM running for 3.485) 
+18:03:14.144 [http-nio-8080-exec-1] ERROR c.b.openapi.conf.filter.SignFilter - 缺少方法签名 
+18:03:14.209 [Thread-8] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+18:13:43.979 [main] INFO  c.belle.openapi.OpenapiApplication - Starting OpenapiApplication on xiexiongdeMacBook-Pro.local with PID 15727 (/Users/xiexiong/project/openapi/target/classes started by xiexiong in /Users/xiexiong/project/openapi) 
+18:13:43.984 [main] INFO  c.belle.openapi.OpenapiApplication - The following profiles are active: dev 
+18:13:45.198 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) 
+18:13:45.219 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+18:13:45.219 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19] 
+18:13:45.335 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+18:13:45.335 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1291 ms 
+18:13:45.402 [main] INFO  o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?) 
+18:13:45.440 [main] INFO  o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?) 
+18:13:45.819 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated 
+18:13:45.838 [main] ERROR c.a.druid.filter.FilterManager - load filter error, filter not found : logback 
+18:13:46.006 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+18:13:46.349 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' 
+18:13:46.353 [main] INFO  c.belle.openapi.OpenapiApplication - Started OpenapiApplication in 2.913 seconds (JVM running for 3.735) 
+18:14:30.555 [http-nio-8080-exec-1] ERROR c.b.openapi.conf.filter.SignFilter - 缺少方法签名 
+18:17:20.146 [Thread-8] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+18:17:46.779 [main] INFO  c.belle.openapi.OpenapiApplication - Starting OpenapiApplication on xiexiongdeMacBook-Pro.local with PID 15760 (/Users/xiexiong/project/openapi/target/classes started by xiexiong in /Users/xiexiong/project/openapi) 
+18:17:46.782 [main] INFO  c.belle.openapi.OpenapiApplication - The following profiles are active: dev 
+18:17:47.928 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) 
+18:17:47.948 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+18:17:47.948 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19] 
+18:17:48.052 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+18:17:48.053 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1231 ms 
+18:17:48.104 [main] INFO  o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?) 
+18:17:48.105 [main] INFO  o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?) 
+18:17:48.428 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated 
+18:17:48.444 [main] ERROR c.a.druid.filter.FilterManager - load filter error, filter not found : logback 
+18:17:48.603 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+18:17:48.903 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '' 
+18:17:48.906 [main] INFO  c.belle.openapi.OpenapiApplication - Started OpenapiApplication in 2.52 seconds (JVM running for 3.276) 
+18:18:47.789 [http-nio-8080-exec-8] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+18:18:47.789 [http-nio-8080-exec-8] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+18:18:47.799 [http-nio-8080-exec-8] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms 
+18:18:53.823 [http-nio-8080-exec-8] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+18:18:53.950 [http-nio-8080-exec-8] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user  
+18:18:54.033 [http-nio-8080-exec-8] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - ==> Parameters:  
+18:18:54.063 [http-nio-8080-exec-8] DEBUG c.b.o.dao.mysql.UserDao.selectUsers - <==      Total: 2 
+18:19:20.505 [http-nio-8080-exec-6] ERROR c.b.openapi.conf.filter.SignFilter - 缺少方法签名 
+18:19:52.224 [http-nio-8080-exec-2] DEBUG c.b.o.dao.mysql.UserDao.insert - ==>  Preparing: INSERT INTO t_user ( userName,password, phone ) VALUES( ?,?, ? )  
+18:19:52.229 [http-nio-8080-exec-2] DEBUG c.b.o.dao.mysql.UserDao.insert - ==> Parameters: ceffffee22333(String), fffffe2333(String), 123344444(String) 
+18:19:52.257 [http-nio-8080-exec-2] DEBUG c.b.o.dao.mysql.UserDao.insert - <==    Updates: 1 
+18:24:24.198 [Thread-7] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+18:24:24.204 [Thread-7] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} closed 
+18:37:14.498 [main] INFO  c.belle.openapi.OpenapiApplication - Starting OpenapiApplication on xiexiongdeMacBook-Pro.local with PID 15979 (/Users/xiexiong/project/openapi/target/classes started by xiexiong in /Users/xiexiong/project/openapi) 
+18:37:14.502 [main] INFO  c.belle.openapi.OpenapiApplication - The following profiles are active: dev 
+18:37:15.632 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http) 
+18:37:15.651 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+18:37:15.651 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19] 
+18:37:15.753 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+18:37:15.753 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1204 ms 
+18:37:15.810 [main] INFO  o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?) 
+18:37:15.811 [main] INFO  o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?) 

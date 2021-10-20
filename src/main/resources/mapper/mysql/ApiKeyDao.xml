@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.belle.bdc.openapi.dao.mysql.ApiKeyDao" >
+    <sql id="BASE_TABLE">
+        tbl_merchant_api_key
+    </sql>
+
+    <sql id="BASE_COLUMN">
+        id,app_key,app_secret,status,update_user,update_time
+    </sql>
+
+    <insert id="insert" parameterType="cn.com.belle.bdc.openapi.model.ApiKey">
+        INSERT INTO
+        <include refid="BASE_TABLE"/>
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            id,app_key,app_secret,status,update_user,update_time
+        </trim>
+        <trim prefix="VALUES(" suffix=")" suffixOverrides=",">
+            #{id, jdbcType=VARCHAR},
+            #{appKey, jdbcType=VARCHAR},#{appSecret, jdbcType=VARCHAR},
+            #{status, jdbcType=VARCHAR},#{updateUser, jdbcType=VARCHAR},
+            #{updateTime, jdbcType=VARCHAR}
+        </trim>
+    </insert>
+
+    <select id="queryApiKeyMetadata" resultType="hashmap" parameterType="string">
+        SELECT t1.app_key, t1.app_secret, t1.status, t2.id, t2.key_id, t2.metadata_key, t2.metadata_val FROM tbl_merchant_api_key t1 INNER JOIN tbl_merchant_api_key_metadata t2 ON (t1.id = t2.key_id)
+    </select>
+
+    <select id="isApiEnable" resultType="hashmap" parameterType="string">
+        select t.id,t.api_method,t.is_enable from tbl_merchant_api t
+    </select>
+
+    <select id="queryApiLicenseList" resultType="hashmap" parameterType="string">
+        select t.api_id, k.app_key from tbl_merchant_api_license t INNER JOIN tbl_merchant_api_key k ON t.key_id = k.id
+    </select>
+
+</mapper>

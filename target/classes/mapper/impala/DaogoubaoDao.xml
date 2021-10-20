@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.belle.bdc.openapi.dao.impala.DaogoubaoDao" >
+    <sql id="BASE_TABLE">
+
+    </sql>
+
+    <sql id="BASE_COLUMN">
+
+    </sql>
+
+    <select id="getStoreSalamtsame" resultType="hashmap" parameterType="string">
+        <choose>
+            <when test="0==params.real">
+                SELECT
+                <if test="0==params.split_result" >
+                    t.organ_new_no as organ_new_no,
+                </if>
+                sum( t.SAL_ACTUAL_AMT ) as sal_amt,
+                sum( t.LAST_SAL_ACTUAL_AMT ) as last_sal_amt
+                FROM
+                bi_shoes_dsp.app_day_org_kpi t
+                WHERE 1 = 1
+                <if test="params.store_no != null" >
+                    and t.organ_new_no in(${params.store_no})
+                </if>
+                <if test="params.start_date != null" >
+                    AND t.period_sdate &gt;= #{params.start_date}
+                </if>
+                <if test="params.end_date != null" >
+                    AND t.period_sdate &lt;= #{params.end_date}
+                </if>
+                <if test="0==params.split_result" >
+                    group by t.organ_new_no
+                </if>
+            </when>
+            <otherwise>
+                SELECT
+                <if test="0==params.split_result" >
+                    t.organ_new_no as organ_new_no,
+                </if>
+                sum( t.SAL_AMT ) as sal_amt,
+                sum( t.LAST_SAL_AMT ) as last_sal_amt
+                FROM
+                bi_shoes_dsp.app_day_org_kpi t
+                WHERE 1 = 1
+                <if test="params.store_no != null" >
+                    and t.organ_new_no in(${params.store_no})
+                </if>
+                <if test="params.start_date != null" >
+                    AND t.period_sdate &gt;= #{params.start_date}
+                </if>
+                <if test="params.end_date != null" >
+                    AND t.period_sdate &lt;= #{params.end_date}
+                </if>
+                <if test="0==params.split_result" >
+                    group by t.organ_new_no
+                </if>
+            </otherwise>
+        </choose>
+    </select>
+
+    <select id="getRegionBrandSalamtsame" resultType="hashmap" parameterType="string">
+        <choose>
+            <when test="0==params.real">
+                SELECT
+                <if test="params.region_no != null" >
+                    t2.REGION_NO,
+                </if>
+                <if test="params.brand_no != null" >
+                    T1.BRAND_NO,
+                </if>
+                sum( t1.SAL_ACTUAL_AMT ) as SAL_AMT,sum( t1.LAST_SAL_ACTUAL_AMT ) as LAST_SAL_AMT
+                FROM
+                bi_shoes_dsp.app_day_org_kpi t1,
+                bi_shoes_dm.dim_org_allinfo t2
+                WHERE
+                t1.organ_new_no = t2.ORGAN_NEW_NO
+                AND t2.ORGAN_FLAG = 0
+                <if test="params.region_no != null" >
+                    AND t2.REGION_NO in(${params.region_no})
+                </if>
+                <if test="params.brand_no != null" >
+                    AND T1.BRAND_NO in(${params.brand_no})
+                </if>
+                <if test="params.start_date != null" >
+                    AND t1.period_sdate &gt;= #{params.start_date}
+                </if>
+                <if test="params.end_date != null" >
+                    AND t1.period_sdate &lt;= #{params.end_date}
+                </if>
+                GROUP BY
+                <if test="params.region_no != null" >
+                    t2.REGION_NO,
+                </if>
+                <if test="params.brand_no != null" >
+                    T1.BRAND_NO,
+                </if>
+                1
+            </when>
+            <otherwise>
+                SELECT
+                <if test="params.region_no != null" >
+                    t2.REGION_NO,
+                </if>
+                <if test="params.brand_no != null" >
+                    T1.BRAND_NO,
+                </if>
+                sum( t1.SAL_AMT ) as SAL_AMT,sum( t1.LAST_SAL_AMT ) as LAST_SAL_AMT
+                FROM
+                bi_shoes_dsp.app_day_org_kpi t1,
+                bi_shoes_dm.dim_org_allinfo t2
+                WHERE
+                t1.organ_new_no = t2.ORGAN_NEW_NO
+                AND t2.ORGAN_FLAG = 0
+                <if test="params.region_no != null" >
+                    AND t2.REGION_NO in(${params.region_no})
+                </if>
+                <if test="params.brand_no != null" >
+                    AND T1.BRAND_NO in(${params.brand_no})
+                </if>
+                <if test="params.start_date != null" >
+                    AND t1.period_sdate &gt;= #{params.start_date}
+                </if>
+                <if test="params.end_date != null" >
+                    AND t1.period_sdate &lt;= #{params.end_date}
+                </if>
+                GROUP BY
+                <if test="params.region_no != null" >
+                    t2.REGION_NO,
+                </if>
+                <if test="params.brand_no != null" >
+                    T1.BRAND_NO,
+                </if>
+                1
+            </otherwise>
+        </choose>
+    </select>
+
+    <select id="getStoreDoubleorder" resultType="hashmap" parameterType="string">
+        SELECT
+        sum( CUST2_SAL_NOS_NUMBER ) AS double_order
+        FROM
+        bi_shoes_dsp.app_day_org_staff_sal t
+        WHERE 1 = 1
+        <if test="params.store_no != null" >
+            and t.organ_new_no in(${params.store_no})
+        </if>
+        <if test="params.start_date != null" >
+            AND t.period_sdate &gt;= #{params.start_date}
+        </if>
+        <if test="params.end_date != null" >
+            AND t.period_sdate &lt;= #{params.end_date}
+        </if>
+    </select>
+
+    <select id="getRegionBrandDoubleorder" resultType="hashmap" parameterType="string">
+
+        SELECT
+        t2.REGION_NO,
+        T2.BRAND_NO,
+        sum( t1.CUST2_SAL_NOS_NUMBER ) AS double_order
+        FROM
+        bi_shoes_dsp.app_day_org_staff_sal t1,
+        bi_shoes_dm.dim_org_allinfo t2
+        WHERE
+        t1.organ_new_no = t2.organ_new_no
+        AND t2.ORGAN_FLAG =0
+        <if test="params.region_no != null" >
+            AND t2.REGION_NO in(${params.region_no})
+        </if>
+        <if test="params.brand_no != null" >
+            AND T2.BRAND_NO in(${params.brand_no})
+        </if>
+        <if test="params.start_date != null" >
+            AND t1.period_sdate &gt;= #{params.start_date}
+        </if>
+        <if test="params.end_date != null" >
+            AND t1.period_sdate &lt;= #{params.end_date}
+        </if>
+        GROUP BY t2.REGION_NO,T2.BRAND_NO
+
+    </select>
+
+    <select id="getStoreOrders" resultType="hashmap" parameterType="string">
+        SELECT
+        sum( t.CUST_SAL_NOS_NUMBER ) AS orders
+        FROM
+        bi_shoes_dsp.app_day_org_kpi t
+        WHERE 1 = 1
+        <if test="params.store_no != null" >
+            and t.organ_new_no in(${params.store_no})
+        </if>
+        <if test="params.start_date != null" >
+            AND t.period_sdate &gt;= #{params.start_date}
+        </if>
+        <if test="params.end_date != null" >
+            AND t.period_sdate &lt;= #{params.end_date}
+        </if>
+    </select>
+
+    <select id="getAssistantOrders" resultType="hashmap" parameterType="string">
+
+        SELECT
+        sum( t.CUST_SAL_NOS_NUMBER ) AS orders
+        FROM
+        bi_shoes_dsp.app_day_org_staff_sal t
+        WHERE 1 = 1
+        <if test="params.staff_id != null" >
+            and t.STAFF_ID in(${params.staff_id})
+        </if>
+        <if test="params.start_date != null" >
+            AND t.period_sdate &gt;= #{params.start_date}
+        </if>
+        <if test="params.end_date != null" >
+            AND t.period_sdate &lt;= #{params.end_date}
+        </if>
+
+    </select>
+
+    <select id="getStoreSalamt" resultType="hashmap" parameterType="string">
+        SELECT
+        sum( t.SAL_AMT ) AS SAL_AMT
+        FROM
+        bi_shoes_dsp.app_day_org_kpi t
+        WHERE 1 = 1
+        <if test="params.store_no != null" >
+            and t.organ_new_no in(${params.store_no})
+        </if>
+        <if test="params.start_date != null" >
+            AND t.period_sdate &gt;= #{params.start_date}
+        </if>
+        <if test="params.end_date != null" >
+            AND t.period_sdate &lt;= #{params.end_date}
+        </if>
+    </select>
+
+    <select id="getAssistantSalamt" resultType="hashmap" parameterType="string">
+
+        SELECT
+        sum( t.SAL_AMT ) AS SAL_AMT
+        FROM
+        bi_shoes_dsp.app_day_org_staff_sal t
+        WHERE 1 = 1
+        <if test="params.staff_id != null" >
+            and t.STAFF_ID in(${params.staff_id})
+        </if>
+        <if test="params.start_date != null" >
+            AND t.period_sdate &gt;= #{params.start_date}
+        </if>
+        <if test="params.end_date != null" >
+            AND t.period_sdate &lt;= #{params.end_date}
+        </if>
+
+    </select>
+
+    <select id="getStoreSalCompletionRate" resultType="hashmap" parameterType="string">
+        SELECT
+        ROUND(
+        CASE
+
+        WHEN sum( t.TARGET_AMT ) = 0 THEN
+        0 ELSE sum( t.SAL_AMT ) / sum( t.TARGET_AMT )
+        END,
+        3
+        ) AS sal_completion_rate
+        FROM
+        bi_shoes_dsp.app_day_org_kpi t
+        WHERE 1 = 1
+        <if test="params.store_no != null" >
+            and t.organ_new_no in(${params.store_no})
+        </if>
+        <if test="params.start_date != null" >
+            AND t.period_sdate &gt;= #{params.start_date}
+        </if>
+        <if test="params.end_date != null" >
+            AND t.period_sdate &lt;= #{params.end_date}
+        </if>
+    </select>
+
+    <select id="getAssistantSalCompletionRate" resultType="hashmap" parameterType="string">
+        SELECT
+        ROUND(
+        CASE
+
+        WHEN sum( t1.AMOUNT ) = 0 THEN
+        0 ELSE sum( t2.SAL_AMT ) / sum( t1.AMOUNT )
+        END,
+        3
+        ) AS sal_completion_rate
+        FROM
+        retail_pos_ods.sale_assistant_target t1,
+        bi_shoes_dsp.app_day_org_staff_sal t2
+        WHERE
+        t1.ASSISTANT_NO = t2.STAFF_ID
+        AND from_unixtime(unix_timestamp(t1.target_date,'yyyy-MM-dd'),'yyyyMMdd') = t2.period_sdate
+        AND t1.target_type = 1
+        <if test="params.staff_id != null" >
+            and t2.STAFF_ID in(${params.staff_id})
+        </if>
+        <if test="params.start_date != null" >
+            AND t2.period_sdate &gt;= #{params.start_date}
+            AND from_unixtime(unix_timestamp(t1.target_date,'yyyy-MM-dd'),'yyyyMMdd') &gt;= #{params.start_date}
+        </if>
+        <if test="params.end_date != null" >
+            AND t2.period_sdate &lt;= #{params.end_date}
+            AND from_unixtime(unix_timestamp(t1.target_date,'yyyy-MM-dd'),'yyyyMMdd') &lt;= #{params.end_date}
+        </if>
+
+    </select>
+
+    <select id="getStoreSaleDayTarget" resultType="hashmap" parameterType="string">
+        SELECT
+            t.target_date,
+            sum( t.AMOUNT ) AS AMOUNT
+        FROM
+            retail_pos_ods.sale_day_target t
+        WHERE 1 = 1
+        <if test="params.store_no != null" >
+            and t.shop_no in(${params.store_no})
+        </if>
+        <if test="params.start_date != null" >
+            AND from_unixtime(unix_timestamp(t.target_date,'yyyy-MM-dd'),'yyyyMMdd') &gt;= #{params.start_date}
+        </if>
+        <if test="params.end_date != null" >
+            AND from_unixtime(unix_timestamp(t.target_date,'yyyy-MM-dd'),'yyyyMMdd') &lt;= #{params.end_date}
+        </if>
+        group by t.target_date
+    </select>
+
+    <select id="getStoreSaleMonthTarget" resultType="hashmap" parameterType="string">
+        SELECT
+            t1.shop_no,
+            t1.years,
+            t1.months,
+            sum( t1.plan_target ) AS amount
+        FROM
+        retail_mps_ods.sale_month_target t1
+        WHERE 1 = 1
+        <if test="params.store_no != null" >
+            and t1.shop_no in(${params.store_no})
+        </if>
+        group by t1.shop_no,t1.years,t1.months
+    </select>
+
+    <select id="getAssistantSaleDayTarget" resultType="hashmap" parameterType="string">
+        SELECT
+            t.target_date,
+            sum( t.AMOUNT ) AS AMOUNT
+        FROM
+            retail_pos_ods.sale_assistant_target t
+        WHERE
+            t.target_type = 1
+        <if test="params.staff_id != null" >
+            and t.ASSISTANT_NO in(${params.staff_id})
+        </if>
+        <if test="params.start_date != null" >
+            AND from_unixtime(unix_timestamp(t.target_date,'yyyy-MM-dd'),'yyyyMMdd') &gt;= #{params.start_date}
+        </if>
+        <if test="params.end_date != null" >
+            AND from_unixtime(unix_timestamp(t.target_date,'yyyy-MM-dd'),'yyyyMMdd') &lt;= #{params.end_date}
+        </if>
+        GROUP BY t.target_date
+    </select>
+
+    <select id="getStoreSaleCurrentDayTarget" resultType="hashmap" parameterType="string">
+        SELECT
+            sum( t.customer_settle_price_amount ) amount,
+            shop_no
+        FROM
+            (
+        SELECT
+            om.customer_settle_price_amount,
+            om.shop_no
+        FROM
+            retail_pos_ods.order_main om
+        WHERE 1 = 1
+            AND om.sharding_yyyymm = from_unixtime(unix_timestamp(),'yyyyMM')
+            AND om.business_type NOT IN ( 4 )
+            AND om.STATUS >= 30
+            AND om.out_date = from_unixtime(unix_timestamp(),'yyyyMMdd')
+        <if test="params.store_no != null" >
+            and om.shop_no in(${params.store_no})
+        </if>
+        UNION ALL
+        SELECT
+            rem.customer_settle_price_amount,
+            rem.shop_no
+        FROM
+            retail_pos_ods.return_exchange_main rem
+        WHERE 1 = 1
+            AND rem.sharding_yyyymm = from_unixtime(unix_timestamp(),'yyyyMM')
+            AND rem.business_type NOT IN ( 4 )
+            AND rem.STATUS >= 30
+            AND rem.out_date = from_unixtime(unix_timestamp(),'yyyyMMdd')
+        <if test="params.store_no != null" >
+            and rem.shop_no in(${params.store_no})
+        </if>
+            ) t
+        GROUP BY
+            shop_no
+    </select>
+
+    <select id="getAssistantSaleCurrentDayTarget" resultType="hashmap" parameterType="string">
+        SELECT
+            sum( t.share_amount ) share_amount,
+            assistant_no
+        FROM
+            (
+            SELECT
+                ora.assistant_no,
+                sum( ora.share_amount ) share_amount
+            FROM
+                retail_pos_ods.order_assistant ora
+                LEFT JOIN retail_pos_ods.order_dtl od ON od.id = ora.order_dtl_id
+                JOIN retail_pos_ods.order_main om ON om.order_no = od.order_no
+            WHERE 1 = 1
+                AND ora.sharding_yyyymm = from_unixtime(unix_timestamp(),'yyyy-MM')
+                AND od.sharding_yyyymm = from_unixtime(unix_timestamp(),'yyyy-MM')
+                AND om.sharding_yyyymm = from_unixtime(unix_timestamp(),'yyyy-MM')
+                AND od.service_type_no in ('1001','1002','1003','1004','1005','1010')
+                AND om.STATUS in (20,30,41,99)
+                AND om.out_date = from_unixtime(unix_timestamp(),'yyyy-MM-dd')
+            <if test="params.staff_id != null" >
+                and ora.assistant_no in(${params.staff_id})
+            </if>
+            GROUP BY
+                ora.assistant_no
+            UNION ALL
+            SELECT
+                ora.assistant_no,
+                sum( ora.share_amount ) share_amount
+            FROM
+                retail_pos_ods.order_assistant ora
+                LEFT JOIN retail_pos_ods.return_exchange_dtl red ON red.id = ora.order_dtl_id
+                JOIN retail_pos_ods.return_exchange_main rem ON rem.business_no = red.business_no
+            WHERE 1 = 1
+                AND ora.sharding_yyyymm = from_unixtime(unix_timestamp(),'yyyy-MM')
+                AND red.sharding_yyyymm = from_unixtime(unix_timestamp(),'yyyy-MM')
+                AND rem.sharding_yyyymm = from_unixtime(unix_timestamp(),'yyyy-MM')
+                AND red.service_type_no in ('1001','1002','1003','1004','1005','1010')
+                AND rem.STATUS in (20,30,41,99)
+                AND rem.out_date = from_unixtime(unix_timestamp(),'yyyy-MM-dd')
+            <if test="params.staff_id != null" >
+                and ora.assistant_no in(${params.staff_id})
+            </if>
+            GROUP BY
+                ora.assistant_no
+            ) t
+        GROUP BY
+            assistant_no
+    </select>
+</mapper>

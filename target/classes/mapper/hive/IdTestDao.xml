@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.belle.bdc.openapi.dao.hive.IdTestDao" >
+    <sql id="BASE_TABLE">
+        id_test
+    </sql>
+
+    <sql id="BASE_COLUMN">
+        id
+    </sql>
+
+    <select id="selectIds" resultType="cn.com.belle.bdc.openapi.model.IdTest">
+        select organ_new_no id from app_day_org_kpi limit 1
+    </select>
+</mapper>

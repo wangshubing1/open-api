@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="openapi:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>openapi</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="openapi.war">
+      <element id="artifact" artifact-name="openapi:war exploded" />
+    </root>
+  </artifact>
+</component>
